@@ -4,7 +4,6 @@ import { FilmPlayerPage } from "@/pages/FilmPlayerPage";
 import { Films } from "@/pages/Films";
 import { Main } from "@/pages/Main";
 import { Outlet, Router, Route, RootRoute } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 
 const rootRoute = new RootRoute({
   component: () => (
@@ -13,7 +12,6 @@ const rootRoute = new RootRoute({
       <div className="mt-20">
         <Outlet />
       </div>
-      <TanStackRouterDevtools />
     </>
   ),
 });
